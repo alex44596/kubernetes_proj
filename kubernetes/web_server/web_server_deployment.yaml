@@ -8,12 +8,12 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: phonebook-app-pod
+      name: phonebook-app-pod
   template:
     metadata:
       name: phonebook-app-pod
       labels:
-        app: phonebook-app-pod
+        name: phonebook-app-pod
     spec:
       containers:
       - name: phonbook-app
